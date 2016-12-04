@@ -1,3 +1,19 @@
+bignumber.cpp
+blocklist.cpp
+countprimes.cpp
+dancinglinks.cpp
+dinic.cpp
+fft.cpp
+findnumbersofd(n)_divisors.cpp
+karpminimumcircuit.cpp
+makrpointbypolygon.cpp
+printitself.cpp
+superpower.cpp
+sustainable01tree.cpp
+treehash.cpp
+zkwcostflow.cpp
+
+
 bignumber.cpp:
 class BigNum
 {
