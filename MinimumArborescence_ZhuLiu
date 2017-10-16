@@ -1,7 +1,7 @@
 #define foreach(x, y) for(__typeof((y).begin()) x = (y).begin(); x != (y).end(); ++x)
 
-// edges will up to n * m
-const int N = 510, M = 5000010;
+// points up to 2 * n, edges will up to n * m
+const int N = 1010, M = 5000010;
 int st[M], ed[M], val[M];
 vector<int> valid_edges, valid_points, tpoints, tedges;
 int n, m, origin_n, origin_m;
