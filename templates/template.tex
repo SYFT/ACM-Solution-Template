@@ -1,0 +1,108 @@
+\documentclass[landscape,UTF8]{ctexart}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[landscape]{geometry}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{cite}
+\usepackage{titlesec}
+\usepackage{blindtext}
+\usepackage{etoolbox}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=black
+}
+\pagestyle{fancy}
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}
+\usepackage{setspace}
+\onehalfspacing
+\addtolength{\parskip}{.4em}
+\cfoot{\thepage}
+\rhead{ACM模板}
+\makeatletter
+%\patchcmd{\ttlh@hang}{\parindent\z@}{\parindent\z@\leavevmode}{}{}
+%\patchcmd{\ttlh@hang}{\noindent}{}{}{}
+\makeatother
+\usepackage{listings}
+\usepackage{color}  
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{codegreen}{rgb}{0,0.6,0}  
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}  
+\definecolor{codepurple}{rgb}{0.58,0,0.82}  
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}  
+   
+\lstset{ %
+  basicstyle=\footnotesize,		   % the size of the fonts that are used for the code
+  numbers=left,				   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=2,				   % the step between two line-numbers. If it's 1, each line 
+								  % will be numbered
+  numbersep=5pt,				  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},	  % choose the background color. You must add \usepackage{color}
+  showspaces=false,			   % show spaces adding particular underscores
+  showstringspaces=false,		 % underline spaces within strings
+  showtabs=false,				 % show tabs within strings adding particular underscores
+  frame=single,				   % adds a frame around the code
+  rulecolor=\color{black},		% if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,					  % sets default tabsize to 2 spaces
+  captionpos=b,				   % sets the caption-position to bottom
+  breaklines=true,				% sets automatic line breaking
+  breakatwhitespace=false,		% sets if automatic breaks should only happen at whitespace
+  title=\lstname,				   % show the filename of files included with \lstinputlisting;
+								  % also try caption instead of title
+  keywordstyle=\color{blue},		  % keyword style
+  commentstyle=\color{dkgreen},	   % comment style
+  stringstyle=\color{mauve},		 % string literal style
+  escapeinside={\%*}{*)},			% if you want to add LaTeX within your code
+  morekeywords={*,...}			   % if you want to add more keywords to the set
+}
+
+\begin{document}
+\title{模板}
+\author{严紫熙}
+\date{2017年10月20日}
+
+\newpage
+\tableofcontents
+
+\pagebreak
+
+\section{dinic.cpp}
+\lstinputlisting[language=c++]{dinic.cpp}
+\section{findnumbersofd\(n\)\_divisors.cpp}
+\lstinputlisting[language=c++]{findnumbersofd(n)_divisors.cpp}
+\section{ISap.cpp}
+\lstinputlisting[language=c++]{ISap.cpp}
+\section{bignumber.cpp}
+\lstinputlisting[language=c++]{bignumber.cpp}
+\section{MinimumArborescence\_ZhuLiu.cpp}
+\lstinputlisting[language=c++]{MinimumArborescence_ZhuLiu.cpp}
+\section{zkwcostflow.cpp}
+\lstinputlisting[language=c++]{zkwcostflow.cpp}
+\section{makrpointbypolygon.cpp}
+\lstinputlisting[language=c++]{makrpointbypolygon.cpp}
+\section{fft.cpp}
+\lstinputlisting[language=c++]{fft.cpp}
+\section{FastIO.cpp}
+\lstinputlisting[language=c++]{FastIO.cpp}
+\section{sustainable01tree.cpp}
+\lstinputlisting[language=c++]{sustainable01tree.cpp}
+\section{printitself.cpp}
+\lstinputlisting[language=c++]{printitself.cpp}
+\section{karpminimumcircuit.cpp}
+\lstinputlisting[language=c++]{karpminimumcircuit.cpp}
+\section{dancinglinks.cpp}
+\lstinputlisting[language=c++]{dancinglinks.cpp}
+\section{blocklist.cpp}
+\lstinputlisting[language=c++]{blocklist.cpp}
+\section{treehash.cpp}
+\lstinputlisting[language=c++]{treehash.cpp}
+\section{countprimes.cpp}
+\lstinputlisting[language=c++]{countprimes.cpp}
+\section{superpower.cpp}
+\lstinputlisting[language=c++]{superpower.cpp}
+\end{document}

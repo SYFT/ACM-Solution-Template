@@ -1,25 +1,24 @@
-import os
-
+# coding=utf-8
+import os, sys
+reload(sys) 
+sys.setdefaultencoding('utf-8')
 fileDir = '.'
-resultName = 'template.txt'
+resultName = 'template_.tex'
 resultFile = os.path.join(fileDir, resultName)
 
-with open(resultFile, 'w') as result :
+with open(resultFile, 'wb') as result :
 	for fName in os.listdir(fileDir) :
 		if fName.find('.cpp') != len(fName) - 4 :
 			continue
-		result.write(fName + "\n")
-	for fName in os.listdir(fileDir) :
-		if fName.find('.cpp') != len(fName) - 4 :
-			continue
-
-		result.write(fName + ':\n')
-		fName = os.path.join(fileDir, fName)
-		template = open(fName, 'r')
-		content = template.read()
-		template.close()
-		result.write(content)
-		result.write('\n\n\n')
-
+                result.write(r'\section{%s}' % fName)
+                result.write('\n')
+                result.write(r'\begin{lstlisting}[language=c++]')
+                result.write('\n')
+                T = open(fName, 'rb')
+		content = T.read()
+		T.close()
+                result.write(content + '\n')
+                result.write(r'\end{lstlisting}')
+                result.write('\n')
 
 result.close()
